@@ -3,7 +3,7 @@ StoryBoard和Interface Builder为iOS开发带来了极大的便利，今天就�
 使用xib创建可复用View。
 截图：
 
-![](http://7xpujh.com1.z0.glb.clouddn.com/static/20160107/cardView.gif)
+![](http://7xpujh.com1.z0.glb.clouddn.com/static/images/20160107/cardView.gif)
 
 [http://travelchu.com](http://travelchu.com)
 
@@ -11,24 +11,24 @@ StoryBoard和Interface Builder为iOS开发带来了极大的便利，今天就�
 
 举个例子，项目有多个页面需要使用一个控件（UIView）来展示一张公交卡的信息, 界面如下：
 <!-- more -->
-![](http://7xpujh.com1.z0.glb.clouddn.com/static/20160107/cardView.png)
+![](http://7xpujh.com1.z0.glb.clouddn.com/static/images/20160107/cardView.png)
 
 可以看到这个界面如果用代码写的话还是要花不少功夫的，而且要支持AutoLayout的话，即使有Masonry，代码的长度也可想而知。而使用xib来创建的话相对会容易很多。用xib创建一个这样的页面，相信大家都会，下面我们来看如何让创建的view既支持通过init方法使用，又支持直接在其他xib或者storyboard文件使用。我们给这个view取个名字，就叫“CardView”吧。
 (示例代码: https://github.com/TravelC/XibReuseableViewDemo)
 
 ## 1. 创建CardView.xib文件，并创建好页面，设置好约束
 
-![](http://7xpujh.com1.z0.glb.clouddn.com/static/20160107/cardView_xib.png)
+![](http://7xpujh.com1.z0.glb.clouddn.com/static/images/20160107/cardView_xib.png)
 
 ## 2. 创建UIView的子类CardView，设置CardView.xib的File's Owner为CardView
 
 注意这里的CardView是UIView的子类，并不是UIViewController的子类。
 
-![](http://7xpujh.com1.z0.glb.clouddn.com/static/20160107/cardView_owner.png)
+![](http://7xpujh.com1.z0.glb.clouddn.com/static/images/20160107/cardView_owner.png)
 
 ## 3. 设置我们的cardView为CardView类的一个IBOutlet，这里取名为view
 
-![](http://7xpujh.com1.z0.glb.clouddn.com/static/20160107/cardView_outlet.png)
+![](http://7xpujh.com1.z0.glb.clouddn.com/static/images/20160107/cardView_outlet.png)
 
 ## 4. 打开CardView.m，重写初始化方法
 这里重写了从代码创建会使用init、initWithFrame方法，以及在xib或者storyboard用到的initWithCoder方法。下面的示例代码封装了一个loadCardViewFromNib方法，用来从xib加载view以及做一些初始化操作(增加了一个灰色的边框并设置圆角)。
@@ -132,7 +132,7 @@ CardView *cardView = [[CardView alloc] initWithFrame:CGRectMake(10.0, 70.0, 300.
 
 拖拽一个UIView，将它的类改成CardView即可，唯一的缺点就是不能在xib或者storyboard中预览CardView，现实的实际是空白的UIView，但在程序运行时是CardView真实的样子。
 
-![](http://7xpujh.com1.z0.glb.clouddn.com/static/20160107/cardView_storyboard.png)
+![](http://7xpujh.com1.z0.glb.clouddn.com/static/images/20160107/cardView_storyboard.png)
 
 ## 7. 示例项目代码及截图
 
