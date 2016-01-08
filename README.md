@@ -134,9 +134,6 @@ CardView *cardView = [[CardView alloc] initWithFrame:CGRectMake(10.0, 70.0, 300.
 
 ![](http://7xpujh.com1.z0.glb.clouddn.com/static/images/20160107/cardView_storyboard.png)
 
-## 7. 示例项目代码及截图
-
-代码请到Github下载: https://github.com/TravelC/XibReuseableViewDemo
 
 
 LICENSE
