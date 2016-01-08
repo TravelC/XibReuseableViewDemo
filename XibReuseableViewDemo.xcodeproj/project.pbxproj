@@ -14,6 +14,8 @@
 		EDA54ACA1C3F4BF90001F690 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA54AC81C3F4BF90001F690 /* Main.storyboard */; };
 		EDA54ACC1C3F4BF90001F690 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDA54ACB1C3F4BF90001F690 /* Assets.xcassets */; };
 		EDA54ACF1C3F4BF90001F690 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA54ACD1C3F4BF90001F690 /* LaunchScreen.storyboard */; };
+		EDA54AD71C3F4C070001F690 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDA54AD61C3F4C070001F690 /* CardView.xib */; };
+		EDA54ADA1C3F4C340001F690 /* CardView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA54AD91C3F4C340001F690 /* CardView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,9 @@
 		EDA54ACB1C3F4BF90001F690 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDA54ACE1C3F4BF90001F690 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDA54AD01C3F4BF90001F690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDA54AD61C3F4C070001F690 /* CardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
+		EDA54AD81C3F4C340001F690 /* CardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardView.h; sourceTree = "<group>"; };
+		EDA54AD91C3F4C340001F690 /* CardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +73,9 @@
 				EDA54AC51C3F4BF90001F690 /* SecondViewController.h */,
 				EDA54AC61C3F4BF90001F690 /* SecondViewController.m */,
 				EDA54AC81C3F4BF90001F690 /* Main.storyboard */,
+				EDA54AD81C3F4C340001F690 /* CardView.h */,
+				EDA54AD91C3F4C340001F690 /* CardView.m */,
+				EDA54AD61C3F4C070001F690 /* CardView.xib */,
 				EDA54ACB1C3F4BF90001F690 /* Assets.xcassets */,
 				EDA54ACD1C3F4BF90001F690 /* LaunchScreen.storyboard */,
 				EDA54AD01C3F4BF90001F690 /* Info.plist */,
@@ -144,6 +152,7 @@
 				EDA54ACF1C3F4BF90001F690 /* LaunchScreen.storyboard in Resources */,
 				EDA54ACC1C3F4BF90001F690 /* Assets.xcassets in Resources */,
 				EDA54ACA1C3F4BF90001F690 /* Main.storyboard in Resources */,
+				EDA54AD71C3F4C070001F690 /* CardView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDA54AC71C3F4BF90001F690 /* SecondViewController.m in Sources */,
+				EDA54ADA1C3F4C340001F690 /* CardView.m in Sources */,
 				EDA54AC11C3F4BF90001F690 /* AppDelegate.m in Sources */,
 				EDA54AC41C3F4BF90001F690 /* FirstViewController.m in Sources */,
 				EDA54ABE1C3F4BF90001F690 /* main.m in Sources */,
@@ -306,6 +316,7 @@
 				EDA54AD51C3F4BF90001F690 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

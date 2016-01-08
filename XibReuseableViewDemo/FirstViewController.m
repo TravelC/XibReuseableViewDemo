@@ -7,6 +7,7 @@
 //
 
 #import "FirstViewController.h"
+#import "CardView.h"
 
 @interface FirstViewController ()
 
@@ -16,7 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    CardView *cardView = [[CardView alloc] initWithFrame:CGRectMake(10.0, 70.0, 300.0, 186.0)];
+    [self.view addSubview:cardView];
 }
 
 - (void)didReceiveMemoryWarning {
