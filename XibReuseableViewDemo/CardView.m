@@ -47,6 +47,8 @@
     self = [super initWithFrame:frame];
     if (self) {
         [self loadCardViewFromNib];
+        CGRect viewFrame = CGRectMake(0, 0, frame.size.width, frame.size.height);
+        self.view.frame = viewFrame;
     }
     return self;
 }
